@@ -107,3 +107,59 @@ int main() {
   }
   return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1. Initialization:
+
+    Define a Circular Queue class that contains necessary data members and functions.
+    Declare an array to store elements, front and rear pointers, and size variables.
+
+2. Insertion (Enqueue) Operation:
+
+    Check if the queue is full ((rear + 1) % maxSize == front).
+        If full, display an overflow message.
+        If not full:
+            Increment rear circularly (rear = (rear + 1) % maxSize).
+            Insert the new element at the rear position.
+            If it's the first insertion, set front to 0.
+
+3. Deletion (Dequeue) Operation:
+
+    Check if the queue is empty (front == -1).
+        If empty, display an underflow message.
+        If not empty:
+            Store the element to be removed.
+            If front and rear are at the same position (i.e., only one element is present), reset front and rear to -1.
+            Otherwise, increment front circularly (front = (front + 1) % maxSize).
+            Return the stored element.
+
+4. Display Operation:
+
+    Check if the queue is empty (front == -1).
+        If empty, display an empty queue message.
+        If not empty:
+            Initialize a temporary variable i with front value.
+            Loop until i becomes equal to rear:
+                Display the element at index i.
+                Increment i circularly (i = (i + 1) % maxSize)*/
