@@ -69,3 +69,43 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+/*    Define a Student structure/class containing at least two fields: name and marks to store student information.
+
+    Implement the Quick Sort algorithm to sort the list of students based on their marks in descending order.
+
+    Quick Sort Algorithm:
+        Choose a pivot element (usually the last element in the list).
+        Partition the list such that elements smaller than the pivot are placed to its left and larger elements to its right.
+        Recursively apply the same process to the sublists on the left and right sides of the pivot until the entire list is sorted.
+
+    After sorting the list using Quick Sort, the top ten students will be the first ten elements in the sorted list (since we sorted in descending order).
+
+    Display the top ten students' names along with their marks to show the top performers in the class.
+
+Pseudocode for Quick Sort Algorithm:
+
+plaintext
+
+Algorithm QuickSort(A, low, high):
+    if low < high:
+        pivotIndex = Partition(A, low, high) // Partition the array
+        QuickSort(A, low, pivotIndex - 1)   // Sort the left subarray
+        QuickSort(A, pivotIndex + 1, high)  // Sort the right subarray
+
+Algorithm Partition(A, low, high):
+    pivot = A[high] // Choose the pivot element (usually the last element)
+    i = low - 1     // Initialize the index of smaller element
+
+    for j = low to high - 1:
+        if A[j] >= pivot:
+            i++
+            Swap A[i] with A[j]
+
+    Swap A[i + 1] with A[high]
+    return i + 1*/

@@ -104,3 +104,30 @@ int main() {
   }
   return 0;
 }
+
+
+
+/*    Set the front and rear pointers to -1 initially, indicating an empty queue.
+
+Enqueue (Insertion):
+
+    Check if the queue is full. To check if the queue is full:
+        If (rear + 1) % size == front, the queue is full.
+    If the queue is not full:
+        Increment the rear pointer by 1 using (rear + 1) % size to wrap around the circular queue.
+        Place the new element at the position indicated by the rear pointer.
+        If it's the first element, set the front pointer to 0.
+
+Dequeue (Deletion):
+
+    Check if the queue is empty. To check if the queue is empty:
+        If front == -1, the queue is empty.
+    If the queue is not empty:
+        Output the element at the front.
+        Increment the front pointer by 1 using (front + 1) % size to wrap around the circular queue.
+        If after dequeuing, front becomes equal to rear, set both front and rear to -1 to indicate an empty queue.
+
+Display:
+
+    Start from the front pointer and iterate through the queue elements using a loop until reaching the rear pointer.
+    Output each element at the current position.*/

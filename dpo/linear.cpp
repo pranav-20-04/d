@@ -36,3 +36,20 @@ int main() {
 
     return 0;
 }
+
+
+
+/*    Create a data structure to store student information including their SGPA (e.g., a class or a data structure with fields like name, roll number, SGPA).
+    Read student information along with their SGPA.
+    Define a function or method to search students by SGPA.
+    Initialize an empty list/array to store students with the target SGPA.
+    Iterate through the list of students.
+    For each student:
+        Check if the SGPA of the student matches the target SGPA.
+        If it matches:
+            Add the student's information to the list of students with the target SGPA.
+    If the list of students with the target SGPA is empty:
+        Display a message indicating no students with the given SGPA were found.
+    If the list of students with the target SGPA is not empty:
+        Display the list of students with their information, indicating they have the same SGPA.
+    End.*/

@@ -47,3 +47,28 @@ int main() {
 
     return 0;
 }
+
+
+/*    Start the algorithm.
+    Begin an outer loop from i = 1 to i < n.
+        This loop traverses through each student from the second student to the last.
+    Inside the loop:
+        Set current as the student at the current position (students[i]).
+        Set j as the position just before i (j = i - 1).
+        Start an inner loop:
+            Continue until j >= 0 and students[j].name is lexicographically greater than current.name.
+                (Here, students[j].name refers to the name of the student at position j, and current.name is the name of the student at position i).
+            If the condition is true:
+                Move the student at position j one place ahead in the array (students[j + 1] = students[j]).
+                Decrement j.
+        Insert current at position j + 1 in the sorted sequence (students[j + 1] = current).
+    End the inner loop.
+    End the outer loop.
+    End the algorithm.*/
+
+
+
+
+
+
+

@@ -66,3 +66,27 @@ int main() {
 
     return 0;
 }
+
+
+
+/*    Initialize:
+        Set left to 0 (start of the array)
+        Set right to the last index of the array
+        Set found flag to false
+
+    Repeat Until left is Less Than or Equal to right:
+        Calculate the mid index as the average of left and right
+
+    Compare the Target Name:
+        If the name at the mid index matches the target name:
+            Print the record at the mid index
+            Move mid to the left and search for more matches to the left of mid
+            Set found flag to true
+
+    Update Search Range:
+        If the target name is less than the name at index mid, set right to mid - 1 (move to the left side)
+        If the target name is greater than the name at index mid, set left to mid + 1 (move to the right side)
+
+    Display Results:
+        If found is still false after the loop:
+            Print "No records found for the given name."*/
